@@ -22,8 +22,8 @@ Swagger API Specs - http://localhost:8081/v1
 API ENDPOINTS ::
 -----------------
 > Add Task - POST http://localhost:8081/v1/add  
-> Update Task - POST http://localhost:8081/v1/updateTask
-> Delete Task - DELTE http://localhost:8081/v1/delete/{taskId}
+> Update Task - POST http://localhost:8081/v1/updateTask      
+> Delete Task - DELTE http://localhost:8081/v1/delete/{taskId}      
 > Get Tasks - GET http://localhost:8081/v1/getAll
 
 
