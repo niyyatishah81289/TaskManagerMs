@@ -2,10 +2,10 @@ Task Manager Readme
 
 Tech stack ::
 ------------
-Java 8
-Springboot
-MongoDB
-Docker
+- Java 8
+- Springboot
+- MongoDB
+- Docker
 
 
 TO BUILD & run locally::
@@ -21,10 +21,10 @@ Swagger API Specs - http://localhost:8081/v1
 
 API ENDPOINTS ::
 -----------------
-Add Task - POST http://localhost:8081/v1/add  
-Update Task - POST http://localhost:8081/v1/updateTask
-Delete Task - DELTE http://localhost:8081/v1/delete/{taskId}
-Get Tasks - GET http://localhost:8081/v1/getAll
+> Add Task - POST http://localhost:8081/v1/add  
+> Update Task - POST http://localhost:8081/v1/updateTask
+> Delete Task - DELTE http://localhost:8081/v1/delete/{taskId}
+> Get Tasks - GET http://localhost:8081/v1/getAll
 
 
 Sample TaskDetails JSON ::
@@ -45,11 +45,11 @@ Sample TaskDetails JSON ::
 Docker Commands ::
 --------------------
 1. Build image using below command. This will create a docker image with tag 'taskManager' from the docker file at specified path at current location
-	command : docker build -t <path_for_dockerfile>:taskManager .
+	- command : docker build -t <path_for_dockerfile>:taskManager .
 	
 	
 2. Run docker container by using below command. 
-	command : docker run -p 53462:8081 -e mongo.hostname=<mongodb-hostname> -e mongo.dbport=<mongodb-port> taskManager
+	- command : docker run -p 53462:8081 -e mongo.hostname=<mongodb-hostname> -e mongo.dbport=<mongodb-port> taskManager
 
 	where
 		- p is to expose the services on other port than one configured for local runs
