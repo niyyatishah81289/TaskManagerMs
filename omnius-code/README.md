@@ -6,6 +6,7 @@ Tech stack ::
 - Springboot
 - MongoDB
 - Docker
+- HTML and JS for frontend
 
 
 TO BUILD & run locally::
@@ -22,23 +23,23 @@ Swagger API Specs - http://localhost:8081/v1
 API ENDPOINTS ::
 -----------------
 > Add Task - POST http://localhost:8081/v1/add  
-> Update Task - POST http://localhost:8081/v1/updateTask      
-> Delete Task - DELTE http://localhost:8081/v1/delete/{taskId}      
+> Update Task - POST http://localhost:8081/v1/updateTask    
+> Delete Task - DELTE http://localhost:8081/v1/delete/{taskId}
 > Get Tasks - GET http://localhost:8081/v1/getAll
 
 
 Sample TaskDetails JSON ::
 --------------------------
 {
-    "taskId": "T5",                 
-    "createdAt": "2019-12-10T21:01:26.495Z",                
-    "updatedAt": "2019-11-10T17:33:00.043Z",                  
-    "dueDate": "2019-11-29T10:30:23.709Z",                 
-    "resolvedAt": "2019-12-20T15:30:23.709Z",                   
-    "title": "Test task 3",                
-    "description": "Test task 3",                         
-    "priority": 4,                     
-    "status": "created"                                  
+    "taskId": "T5",
+    "createdAt": "2019-12-10T21:01:26.495Z",
+    "updatedAt": "2019-11-10T17:33:00.043Z",
+    "dueDate": "2019-11-29T10:30:23.709Z",
+    "resolvedAt": "2019-12-20T15:30:23.709Z",
+    "title": "Test task 3",
+    "description": "Test task 3",
+    "priority": 4,
+    "status": "created"
 }
 
 
@@ -55,3 +56,8 @@ Docker Commands ::
 		- p is to expose the services on other port than one configured for local runs
 		- e is to override the environment variables at runtime (in this case mongo host and port could be different)
 		
+
+Frontend :: (Only get All api is called)
+--------------------
+Run the index.html file in browser.  
+Screenshot for home page is in resources folder - 'TaskManager-IndexPage.png'
